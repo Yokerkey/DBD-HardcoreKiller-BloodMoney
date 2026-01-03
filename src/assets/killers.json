@@ -1,0 +1,166 @@
+{
+    "Skull Merchant": {
+        "tier": 4,
+        "cost": 4
+    },
+    "Trapper": {
+        "tier": 4,
+        "cost": 4
+    },
+    "Cannibal": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Clown": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Demogorgon": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Ghost Face": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Legion": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Shape": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Onryo": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Pig": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Trickster": {
+        "tier": 4,
+        "cost": 6
+    },
+    "Cenobite": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Good Guy": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Deathslinger": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Doctor": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Dredge": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Executioner": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Hag": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Knight": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Nemesis": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Animatronic": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Unknown": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Lich": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Wraith": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Xenomorph": {
+        "tier": 3,
+        "cost": 8
+    },
+    "Artist": {
+        "tier": 2,
+        "cost": 10
+    },
+    "Nightmare": {
+        "tier": 2,
+        "cost": 10
+    },
+    "Houndmaster": {
+        "tier": 2,
+        "cost": 10
+    },
+    "Huntress": {
+        "tier": 2,
+        "cost": 10
+    },
+    "Oni": {
+        "tier": 2,
+        "cost": 10
+    },
+    "Plague": {
+        "tier": 2,
+        "cost": 10
+    },
+    "Mastermind": {
+        "tier": 2,
+        "cost": 10
+    },
+    "Dark Lord": {
+        "tier": 2,
+        "cost": 14
+    },
+    "Krasue": {
+        "tier": 2,
+        "cost": 14
+    },
+    "Singularity": {
+        "tier": 2,
+        "cost": 14
+    },
+    "Spirit": {
+        "tier": 2,
+        "cost": 14
+    },
+    "Twins": {
+        "tier": 2,
+        "cost": 14
+    },
+    "Ghoul": {
+        "tier": 1,
+        "cost": 16
+    },
+    "Hillbilly": {
+        "tier": 1,
+        "cost": 16
+    },
+    "Blight": {
+        "tier": 1,
+        "cost": 20
+    },
+    "Nurse": {
+        "tier": 1,
+        "cost": 20
+    }
+}

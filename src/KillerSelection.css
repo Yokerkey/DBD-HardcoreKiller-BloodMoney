@@ -1,0 +1,11 @@
+.killerDescription {
+    margin: 0;
+}
+
+.active {
+    border-color: #ff6464;
+}
+
+.inactive {
+    opacity: 0.6;
+}

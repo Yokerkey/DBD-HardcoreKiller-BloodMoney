@@ -1,0 +1,410 @@
+{
+    "A Nurse's Calling": {
+        "cost": 2
+    },
+    "Agitation": {
+        "cost": 2
+    },
+    "Alien Instinct": {
+        "cost": 1
+    },
+    "All-Shaking Thunder": {
+        "cost": 2
+    },
+    "Awakened Awareness": {
+        "cost": 1
+    },
+    "Bamboozle": {
+        "cost": 3
+    },
+    "Barbecue & Chilli": {
+        "cost": 3
+    },
+    "Batteries Included": {
+        "cost": 2
+    },
+    "Beast of Prey": {
+        "cost": 1
+    },
+    "Bitter Murmur": {
+        "cost": 1
+    },
+    "Blood Echo": {
+        "cost": 1
+    },
+    "Blood Warden": {
+        "cost": 1
+    },
+    "Bloodhound": {
+        "cost": 0
+    },
+    "Brutal Strength": {
+        "cost": 2
+    },
+    "Call of Brine": {
+        "cost": 3
+    },
+    "Corrupt Intervention": {
+        "cost": 5
+    },
+    "Coulrophobia": {
+        "cost": 1
+    },
+    "Coup de Grace": {
+        "cost": 3
+    },
+    "Cruel Limits": {
+        "cost": 1
+    },
+    "Dark Arrogance":{
+        "cost": 1
+    },
+    "Dark Devotion":{
+        "cost": 1
+    },
+    "Darkness Revealed":{
+        "cost": 1
+    },
+    "Dead Man's Switch":{
+        "cost": 3
+    },
+    "Deadlock": {
+        "cost": 3
+    },
+    "Deathbound": {
+        "cost": 1
+    },
+    "Deerstalker": {
+        "cost": 1
+    },
+    "Discordance": {
+        "cost": 3
+    },
+    "Dissolution": {
+        "cost": 3
+    },
+    "Distressing":{
+        "cost": 0
+    },
+    "Dominance": {
+        "cost": 1
+    },
+    "Dragon's Grip": {
+        "cost": 2
+    },
+    "Dying Light": {
+        "cost": 1
+    },
+    "Enduring":{
+        "cost": 2
+    },
+    "Eruption": {
+        "cost": 4
+    },
+    "Fire Up": {
+        "cost": 2
+    },
+    "Forced Hesitation": {
+        "cost": 2
+    },
+    "Forced Penance": {
+        "cost": 1
+    },
+    "Forever Entwined": {
+        "cost": 2
+    },
+    "Franklin's Demise": {
+        "cost": 1
+    },
+    "Friends 'til the End": {
+        "cost": 3
+    },
+    "Furtive Chase": {
+        "cost": 2
+    },
+    "Game Afoot": {
+        "cost": 1
+    },
+    "Gearhead": {
+        "cost": 2
+    },
+    "Genetic Limits": {
+        "cost": 2
+    },
+    "Grim Embrace": {
+        "cost": 4
+    },
+    "Haywire": {
+        "cost": 2
+    },
+    "Help Wanted": {
+        "cost": 1
+    },
+    "Hex - Blood Favour": {
+        "cost": 3
+    },
+    "Hex - Crowd Control": {
+        "cost": 2
+    },
+    "Hex - Devour Hope": {
+        "cost": 3
+    },
+    "Hex - Face the Darkness": {
+        "cost": 2
+    },
+    "Hex - Haunted Ground": {
+        "cost": 2
+    },
+    "Hex - Huntress Lullaby": {
+        "cost": 2
+    },
+    "Hex - No One Escapes Death": {
+        "cost": 3
+    },
+    "Hex - Nothing But Misery": {
+        "cost": 2
+    },
+    "Hex - Overture of Doom": {
+        "cost": 1
+    },
+    "Hex - Pentimento": {
+        "cost": 1
+    },
+    "Hex - Plaything": {
+        "cost": 2
+    },
+    "Hex - Retribution": {
+        "cost": 2
+    },
+    "Hex - Ruin": {
+        "cost": 4
+    },
+    "Hex - The Third Seal": {
+        "cost": 1
+    },
+    "Hex - Thrill of the Hunt": {
+        "cost": 2
+    },
+    "Hex - Two Can Play": {
+        "cost": 1
+    },
+    "Hex - Undying": {
+        "cost": 2
+    },
+    "Hex - Wretched Fate": {
+        "cost": 1
+    },
+    "Hoarder": {
+        "cost": 0
+    },
+    "Hubris": {
+        "cost": 2
+    },
+    "Human Greed": {
+        "cost": 1
+    },
+    "Hysteria": {
+        "cost": 1
+    },
+    "I'm All Ears": {
+        "cost": 2
+    },
+    "Infectious Fright": {
+        "cost": 2
+    },
+    "Insidious": {
+        "cost": 0
+    },
+    "Iron Grasp": {
+        "cost": 1
+    },
+    "Iron Maiden": {
+        "cost": 1
+    },
+    "Knock Out": {
+        "cost": 1
+    },
+    "Languid Touch": {
+        "cost": 1
+    },
+    "Lethal Pursuer": {
+        "cost": 3
+    },
+    "Leverage": {
+        "cost": 2
+    },
+    "Lightborn": {
+        "cost": 1
+    },
+    "Machine Learning": {
+        "cost": 2
+    },
+    "Mad Grit": {
+        "cost": 1
+    },
+    "Make Your Choice": {
+        "cost": 2
+    },
+    "Merciless Storm": {
+        "cost": 2
+    },
+    "Mindbreaker": {
+        "cost": 2
+    },
+    "Monitor & Abuse": {
+        "cost": 1
+    },
+    "Nemesis": {
+        "cost": 1
+    },
+    "No Quarter": {
+        "cost": 1
+    },
+    "No Way Out": {
+        "cost": 3
+    },
+    "None Are Free": {
+        "cost": 2
+    },
+    "Nowhere to Hide": {
+        "cost": 2
+    },
+    "Oppression": {
+        "cost": 3
+    },
+    "Overcharge": {
+        "cost": 2
+    },
+    "Overwhelming Presence": {
+        "cost": 2
+    },
+    "Phantom Fear": {
+        "cost": 2
+    },
+    "Play with Your Food": {
+        "cost": 2
+    },
+    "Pop Goes the Weasel": {
+        "cost": 5
+    },
+    "Predator": {
+        "cost": 2
+    },
+    "Rancor": {
+        "cost": 2
+    },
+    "Rapid Brutality": {
+        "cost": 3
+    },
+    "Ravenous": {
+        "cost": 2
+    },
+    "Remember Me": {
+        "cost": 2
+    },
+    "Save the Best for Last": {
+        "cost": 2
+    },
+    "Scourge Hook - Floods of Rage": {
+        "cost": 2
+    },
+    "Scourge Hook - Gift of Pain": {
+        "cost": 3
+    },
+    "Scourge Hook - Hangman's Trick": {
+        "cost": 0
+    },
+    "Scourge Hook - Jagged Compass": {
+        "cost": 3
+    },
+    "Scourge Hook - Monstrous Shrine": {
+        "cost": 1
+    },
+    "Scourge Hook - Pain Resonance": {
+        "cost": 5
+    },
+    "Septic Touch": {
+        "cost": 0
+    },
+    "Shadowborn": {
+        "cost": 0
+    },
+    "Shattered Hope": {
+        "cost": 0
+    },
+    "Sloppy Butcher": {
+        "cost": 3
+    },
+    "Spies from the Shadows": {
+        "cost": 2
+    },
+    "Spirit Fury": {
+        "cost": 2
+    },
+    "Starstruck": {
+        "cost": 2
+    },
+    "Stridor": {
+        "cost": 1
+    },
+    "Superior Anatomy": {
+        "cost": 2
+    },
+    "Surge": {
+        "cost": 3
+    },
+    "Surveillance": {
+        "cost": 1
+    },
+    "Terminus": {
+        "cost": 1
+    },
+    "Territorial Imperative": {
+        "cost": 1
+    },
+    "Thanatophobia": {
+        "cost": 2
+    },
+    "Thrilling Tremors": {
+        "cost": 2
+    },
+    "THWACK!": {
+        "cost": 1
+    },
+    "Tinkerer": {
+        "cost": 3
+    },
+    "Trail of Torment": {
+        "cost": 2
+    },
+    "Ultimate Weapon": {
+        "cost": 1
+    },
+    "Unbound": {
+        "cost": 2
+    },
+    "Undone": {
+        "cost": 0
+    },
+    "Unforeseen": {
+        "cost": 2
+    },
+    "Unnerving Presence": {
+        "cost": 1
+    },
+    "Unrelenting": {
+        "cost": 1
+    },
+    "Wandering Eye": {
+        "cost": 1
+    },
+    "Weave Attunement": {
+        "cost": 2
+    },
+    "Whispers": {
+        "cost": 2
+    },
+    "Zanshin Tactics": {
+        "cost": 2
+    }
+}
