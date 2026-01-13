@@ -27,10 +27,12 @@ type Perk = {
   cost: number;
 };
 
+/*
 type MatchStats = {
   killer?: Killer;
   perks?: Perk[];
 };
+*/
 
 export default function History() {
 
@@ -66,7 +68,7 @@ export default function History() {
       );
   };
 
-    let balance = Number(localStorage.getItem("balance")) ?? 0;
+    //let balance = Number(localStorage.getItem("balance")) ?? 0;
 
     let getLocalStorageJSON = <T,>(key: string, fallback: T): T => {
         try {
@@ -79,10 +81,11 @@ export default function History() {
 
     let history = getLocalStorageJSON<Match[]>("history", []);
 
-    let calculateMatchCost = (stats: MatchStats) =>
+    /*let calculateMatchCost = (stats: MatchStats) =>
         (stats.killer?.cost ?? 0) +
         (stats.perks?.reduce((sum, p) => sum + (p.cost ?? 0), 0) ?? 0);
 
+    */
     {/*
     return (
     <div style={{ display: "flex", gap: "16px", overflowX: "auto", padding: "8px" }}>

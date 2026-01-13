@@ -69,7 +69,7 @@ export default function KillerSelection() {
   };
 
   
-  let [killerStates, setKillerStates] = useState<Record<string, KillerState>>(
+  let [killerStates] = useState<Record<string, KillerState>>(
     () => {
       try {
         return JSON.parse(localStorage.getItem("killerStates") ?? "{}");

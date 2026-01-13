@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, type Dispatch, type SetStateAction  } from "react";
+import { useState, useMemo, type Dispatch, type SetStateAction  } from "react";
 import Picklist from "./Picklist";
 import MultiPicklist from "./MultiPicklist";
 import {matchCalculation} from "./MatchCalculation";
@@ -107,7 +107,7 @@ export default function Modal({ isOpen, onClose, setLoadoutKiller, setLoadoutPer
     };
 
     if (!isOpen) return null;
-    let { balance, setBalance } = useBalanceState();
+    let { setBalance } = useBalanceState();
     let [selectedKills, setSelectedKills] = useState("");
     let [selectedBonus, setSelectedBonus] = useState("");
     let [selectedPenalties, setSelectedPenalties] = useState<string[]>([]);
@@ -283,7 +283,6 @@ export default function Modal({ isOpen, onClose, setLoadoutKiller, setLoadoutPer
 
                 {selectedKills && !(Number(selectedKills) === 4 && selectedBonus === "4K + 5 Gens left") && (
                     <MultiPicklist
-                        id="penalties"
                         label="Set Penalties: "
                         options={penaltyOptions.filter(opt => {
                             if (Number(selectedKills) === 4 && opt.value === "Hatch Escape") return false;
