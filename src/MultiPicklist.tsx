@@ -5,7 +5,6 @@ type PicklistOption = {
 };
 
 type MultiPicklistProps = {
-  id?: string;
   label: string;
   options: PicklistOption[];
   value: string[];
@@ -14,7 +13,7 @@ type MultiPicklistProps = {
   forcedValues?: string[];
 };
 
-export default function MultiPicklist({ id, label, options, value, onChange, disabled = false, forcedValues = [] }: MultiPicklistProps) {
+export default function MultiPicklist({ label, options, value, onChange, disabled = false, forcedValues = [] }: MultiPicklistProps) {
 
   let isForced = (val: string) => forcedValues.includes(val);
 

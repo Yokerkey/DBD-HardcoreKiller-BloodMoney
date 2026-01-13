@@ -12,7 +12,7 @@ export default function PerkSelection() {
     name: string;
     cost: number;
   };
-  type selectedPerksType = [key: string, cost: number];
+  //type selectedPerksType = [key: string, cost: number];
 
   /*
   let getInitialActivePerks = (): Set<string> => {
@@ -64,11 +64,13 @@ export default function PerkSelection() {
     }
   }
     */
+  /*
   function buttonHandler(perkName: string, cost: number) {
     localStorage.setItem("selectedPerk", perkName);
     localStorage.setItem("perkCost", cost.toString());
     navigate("/menu");
   }
+    */
   /*
   let perkList = [];
   for (let [key, value] of Object.entries(perks)) {

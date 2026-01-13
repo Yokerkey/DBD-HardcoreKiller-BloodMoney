@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import Modal from "./MatchResults.tsx";
-import { createContext } from "react";
 import { BalanceStateProvider, useBalanceState } from "./BalanceContext";
 
 export function Menu() {
@@ -46,8 +45,8 @@ export function Menu() {
     })();
 
   let navigate = useNavigate();
-  let [selectedKills, setSelectedKills] = useState("");
-  let [selectedBonus, setSelectedBonus] = useState("");
+  //let [selectedKills, setSelectedKills] = useState("");
+  //let [selectedBonus, setSelectedBonus] = useState("");
 
   let [isOpen, setIsOpen] = useState(false);
 
@@ -59,7 +58,7 @@ export function Menu() {
     (total, perk) => total + perk.cost,
     0
   );
-  let { balance, setBalance } = useBalanceState();
+  let { balance } = useBalanceState();
   return (
     <>
         <div>
