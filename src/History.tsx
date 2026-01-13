@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import { useRef } from "react";
 
 type Match = {
   stats: {
@@ -81,6 +82,51 @@ export default function History() {
 
     let history = getLocalStorageJSON<Match[]>("history", []);
 
+    let fileInputRef = useRef<HTMLInputElement>(null);
+
+    let exportHistory = () => {
+        let blob = new Blob([JSON.stringify(history, null, 2)], { type: "application/json" });
+        let url = URL.createObjectURL(blob);
+        let a = document.createElement("a");
+        a.href = url;
+        a.download = "dbd-history.json";
+        a.click();
+        URL.revokeObjectURL(url);
+    };
+
+    let importHistory = (e: React.ChangeEvent<HTMLInputElement>) => {
+        let file = e.target.files?.[0];
+        if (!file) return;
+
+        let reader = new FileReader();
+        reader.onload = (event) => {
+            try {
+                let imported = JSON.parse(event.target?.result as string) as Match[];
+                localStorage.setItem("history", JSON.stringify(imported));
+
+                // Recalculate totalPips from history
+                let totalPips = imported.reduce((sum, match) => sum + (Number(match.stats.pips) || 0), 0);
+                localStorage.setItem("totalPips", JSON.stringify(totalPips));
+
+                // Update matchCounter to last match number
+                let maxMatchNum = imported.reduce((max, m) => Math.max(max, m.stats.matchNumber || 0), 0);
+                localStorage.setItem("matchCounter", JSON.stringify(maxMatchNum));
+
+                // Update balance to last match's newBalance
+                if (imported.length > 0) {
+                    let lastBalance = imported[imported.length - 1].stats.newBalance;
+                    localStorage.setItem("balance", JSON.stringify(lastBalance));
+                }
+
+                window.location.reload();
+            } catch {
+                alert("Invalid JSON file");
+            }
+        };
+        reader.readAsText(file);
+        e.target.value = "";
+    };
+
     /*let calculateMatchCost = (stats: MatchStats) =>
         (stats.killer?.cost ?? 0) +
         (stats.perks?.reduce((sum, p) => sum + (p.cost ?? 0), 0) ?? 0);
@@ -120,7 +166,18 @@ export default function History() {
   ); */}
 
   return (
-    <div style={{ display: "flex", justifyContent: "center"}}>
+    <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ marginBottom: "16px", display: "flex", gap: "8px" }}>
+        <button onClick={exportHistory}>Export History</button>
+        <button onClick={() => fileInputRef.current?.click()}>Import History</button>
+        <input
+            ref={fileInputRef}
+            type="file"
+            accept=".json"
+            onChange={importHistory}
+            style={{ display: "none" }}
+        />
+    </div>
     <table style={{ borderCollapse: "collapse", width: "1200px", margin: "auto", padding: 0 }}>
       <thead>
         <tr>
