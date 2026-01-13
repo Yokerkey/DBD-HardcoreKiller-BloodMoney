@@ -5,8 +5,16 @@ import './KillerSelection.css';
 
 export default function PerkSelection() {
   let navigate = useNavigate();
-  let maxPerks = 4;
   let selectedPerks = "selectedPerks";
+  let loadoutPerks = "loadoutPerks";
+
+  type activePerk = {
+    name: string;
+    cost: number;
+  };
+  type selectedPerksType = [key: string, cost: number];
+
+  /*
   let getInitialActivePerks = (): Set<string> => {
     try {
       let stored = localStorage.getItem(selectedPerks);
@@ -15,28 +23,36 @@ export default function PerkSelection() {
       return new Set();
     }
   }
+    */
 
 
-  let [state, setState] = useState<Set<string>>(getInitialActivePerks());
+  let [state, setState] = useState<activePerk[]>(() => {
+    try {
+      let stored = localStorage.getItem(loadoutPerks);
+      return stored ? JSON.parse(stored) as activePerk[] : [];
+    } catch {
+      return [];
+    }
+  });
   
   useEffect(() => {
-    localStorage.setItem(selectedPerks, JSON.stringify(Array.from(state))
+    localStorage.setItem(selectedPerks, JSON.stringify(state)
     );
   }, [state]);
   
-  let toggleState = (key: string) => {
+  let maxPerks = 4;
+  let toggleState = (name: string, cost: number) => {
     setState(prev => {
-      let next = new Set(prev);
-      if (next.has(key)) {
-        next.delete(key);
-        return next;
+      let exists = prev.some(p => p.name === name);
+
+      if (exists) {
+        return prev.filter(p => p.name !== name);
       }
-      if (next.size >= maxPerks) {
+      if (prev.length >= maxPerks) {
         return prev;
       }
       
-      next.add(key);
-      return next;
+      return [...prev, {name, cost}];
     });
   }
   /*
@@ -73,15 +89,18 @@ export default function PerkSelection() {
         </div>
         <div className="card">
             {/* {perkList} */}
-            {Object.entries(perks).map(([key, perk]) => (
-              <button key={key}
-                className={state.has(key) ? "active" : "inactive"}
-                onClick={() => toggleState(key)}>
+            {Object.entries(perks).map(([key, perk]) => {
+              let isActive = state.some(p => p.name === key);
+              return (
+                <button key={key}
+                className={isActive ? "active" : "inactive"}
+                onClick={() => toggleState(key, perk.cost)}>
                 <img src={"/perks/" + key + ".webp"} className="logo" alt={key} />
                 <p className="killerDescription">{key}</p>
                 <p className="killerDescription">{perk.cost}$</p>
               </button>
-            ))}
+            );
+            })}
         </div>
         <div className="card">
             <button onClick={() => {navigate("/menu");}}>
@@ -89,10 +108,14 @@ export default function PerkSelection() {
             </button>
         </div>
         <div data-reactroot className="footer">
-            <button onClick={() => {navigate("/menu");}}>
+            <button onClick={() => {navigate("/menu");
+              localStorage.removeItem(selectedPerks)
+            }}>
             Back
             </button>
-            <button disabled={true} onClick={() => {navigate("/menu");}}>
+            <button onClick={() => {navigate("/menu");
+              localStorage.setItem(loadoutPerks, localStorage.getItem(selectedPerks) || "");
+            }}>
             Confirm
             </button>
         </div>
