@@ -97,7 +97,7 @@ export default function PerkSelection() {
                 <button key={key}
                 className={isActive ? "active" : "inactive"}
                 onClick={() => toggleState(key, perk.cost)}>
-                <img src={import.meta.env.BASE_URL + "/perks/" + key + ".webp"} className="logo" alt={key} />
+                <img src={"perks/" + key + ".webp"} className="logo" alt={key} />
                 <p className="killerDescription">{key}</p>
                 <p className="killerDescription">{perk.cost}$</p>
               </button>

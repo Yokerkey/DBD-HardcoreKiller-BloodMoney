@@ -108,7 +108,7 @@ export default function KillerSelection() {
               }
               onClick={() => {if (available) handleClick(killer)}}
             >
-              <img src={import.meta.env.BASE_URL + "/killers/" + killer.name + ".webp"} className="logo" alt={killer.name} />
+              <img src={"killers/" + killer.name + ".webp"} className="logo" alt={killer.name} />
               <p className="killerDescription">{killer.name}</p>
               <p className="killerDescription">{killer.cost}$</p>
               <p className="killerDescription">
