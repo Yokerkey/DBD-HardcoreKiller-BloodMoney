@@ -42,7 +42,7 @@ export default function History() {
       if (!perk) return "None";
       return (
           <img
-          src={`/perks/${perk.name}.webp`}
+          src={`perks/${perk.name}.webp`}
           alt={perk.name}
           className="logo"
           onError={(e) => {
@@ -57,7 +57,7 @@ export default function History() {
       if (!killer) return "None";
       return (
           <img
-          src={`/killers/${killer.name}.webp`}
+          src={`killers/${killer.name}.webp`}
           alt={killer.name}
           className="logo"
           onError={(e) => {

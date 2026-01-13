@@ -71,7 +71,7 @@ export function Menu() {
             <div className="loadout-container">
                 {loadoutKiller && (
                     <div className="killer-info">
-                        <img src={"/killers/" + loadoutKiller.name + ".webp"} className="logo" alt={loadoutKiller.name} />
+                        <img src={"killers/" + loadoutKiller.name + ".webp"} className="logo" alt={loadoutKiller.name} />
                         <div className="killer-text">
                             <p>The {loadoutKiller.name}</p>
                             <p>Cost: {loadoutKiller.cost}$</p>
@@ -81,7 +81,7 @@ export function Menu() {
                 <div className="perks-container">
                     {loadoutPerks.map(perk => (
                         <div key={perk.name} className="perk-item">
-                            <img src={"/perks/" + perk.name + ".webp"} className="logo"/>
+                            <img src={"perks/" + perk.name + ".webp"} className="logo"/>
                             <p>{perk.name}</p>
                             <p>{perk.cost}$</p>
                         </div>

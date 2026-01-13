@@ -143,7 +143,7 @@ export function Market() {
               onClick={() => toggleSelect(key)}
             >
               <img
-                src={`/killers/${key}.webp`}
+                src={`killers/${key}.webp`}
                 className="logo"
                 alt={key}
               />
